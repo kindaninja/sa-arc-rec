@@ -7,8 +7,8 @@ CODE_ROOT_FOLDER = '/Users/egh/Zeeguu-Core/zeeguu_core/'
 
 
 def extract_import_from_line(line):
-    x = re.search("^import zeeguu_core\.([a-z]+)", line)
-    x = re.search("^from zeeguu_core\.([a-z]+)", line)
+    x = re.search("^import zeeguu_core\.([a-z_]+)", line)
+    x = re.search("^from zeeguu_core\.([a-z_]+)", line)
 
     if x:
         print(str(x))
